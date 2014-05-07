@@ -116,6 +116,14 @@ PRODUCT_PACKAGES += \
 #	FM2 \
 #	FMRecord
 
+# Build FFMPEG Packages
+PRODUCT_PACKAGES += \
+    libavcodec \
+    libavformat \
+    libswscale \
+    libswresample \
+    libavutil
+
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 

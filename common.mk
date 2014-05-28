@@ -140,7 +140,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
     ro.config.ehrpd=true \
     ro.ril.shutdown=true \
-    ro.multi.rild=false
+    ro.multi.rild=false \
+    ro.config.dualmic=true
 
 # Disable SELinux
 PRODUCT_PROPERTY_OVERRIDES += \

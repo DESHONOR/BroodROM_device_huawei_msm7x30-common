@@ -186,7 +186,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 #TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 TARGET_USE_CUSTOM_SECOND_LUN_NUM := 1
 BOARD_VOLD_MAX_PARTITIONS := 16
@@ -194,7 +194,7 @@ BOARD_VOLD_MAX_PARTITIONS := 16
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 RECOVERY_CHARGEMODE := true
-BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
+BOARD_UMS_LUNFILE := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 TARGET_RECOVERY_INITRC := device/huawei/msm7x30-common/recovery/recovery.rc
 #TARGET_RECOVERY_FSTAB := device/huawei/msm7x30-common/recovery_recovery.fstab
 BOARD_RECOVERY_RMT_STORAGE := true

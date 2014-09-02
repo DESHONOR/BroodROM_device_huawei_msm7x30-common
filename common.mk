@@ -184,6 +184,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.low_ram=true \
     persist.sys.wfd.virtual=0 \
     mm.enable.smoothstreaming=true
+    
+    # For Aokp and Dirty Unicorn rom, change ro.sf.lcd_density=240 to 200 to fix code pin bug
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
